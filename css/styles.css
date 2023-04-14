@@ -17,6 +17,13 @@ body {
   letter-spacing: 0.02em;
   color: var(--body-txt);
 }
+.container {
+  width: 1152px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Reset settings */
 .link,
 .link-tel,
@@ -26,6 +33,26 @@ body {
 .list {
   list-style: none;
 }
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Header  */
+
 /* Logotyp */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -77,6 +104,7 @@ body {
 }
 /* Section hero */
 .hero {
+  margin-bottom: 120px;
   background-color: #2e2f42;
 }
 .title-hero {
@@ -86,8 +114,12 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  outline: 2px solid red;
 }
+
 .botton-hero {
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
   font-family: var(--primary-txt);
   font-weight: 500;
   font-size: 16px;
@@ -107,6 +139,10 @@ body {
   background-color: var(--pressed-state);
 }
 /* Our advantages */
+.advantages {
+  margin-bottom: 120px;
+  outline: 3px solid red;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -129,6 +165,10 @@ body {
   color: var(--title-txt);
 }
 /* Photo section */
+.photo {
+  margin-bottom: 120px;
+  outline: 3px solid blue;
+}
 .title-section {
   font-size: 36px;
   line-height: 1.11;
@@ -138,6 +178,9 @@ body {
   color: var(--title-txt);
 }
 /* Our team */
+.our-team {
+  outline: 2px solid green;
+}
 .our-team {
   background-color: #f4f4fd;
 }
@@ -165,6 +208,11 @@ body {
   color: #f4f4fd;
 }
 /* Portfolio */
+.list-filter {
+  margin-top: 96px;
+  margin-bottom: 72px;
+  outline: 2px solid red;
+}
 .btn-filter {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
