@@ -17,6 +17,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--body-txt);
 }
+
 .container {
   width: 1152px;
   padding-left: 12px;
@@ -55,9 +56,20 @@ img {
   margin-bottom: 0;
 }
 /* Header  */
+.header{
+border: 1px solid #E7E9FC;}
+.navigation{
+align-items: center;
+display: flex;}
+.nav-contacts{
+align-items: center;
+display: flex;
+}
 
 /* Logotyp */
 .logo {
+  margin-right: 76px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -80,9 +92,16 @@ img {
 /* Menu */
 .menu {
   font-weight: 500;
+  display: flex;
 }
+.menu-item:not(:last-child){
+margin-right: 40px;}
+
 .menu .link {
+  display: block;
   color: var(--title-txt);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .menu .link:hover,
 .menu .link:focus {
@@ -91,13 +110,19 @@ img {
 /* Contacts header */
 .contacts-header {
   font-style: normal;
+  margin-left: auto;
 }
 .contacts {
+  display: flex;
+  
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.contacts .item:not(:last-child){
+margin-right: 40px;}
 .link-contacts {
   color: var(--body-txt);
 }
@@ -111,14 +136,14 @@ img {
   background-color: #2e2f42;
 }
 .title-hero {
+  max-width: 496px;
   margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #ffffff;
 
-  outline: 2px solid red;
+  color: #ffffff;
 }
 
 .botton-hero {
@@ -143,9 +168,7 @@ img {
 }
 
 /* Our advantages */
-.advantages {
-  outline: 3px solid red;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -158,8 +181,9 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .title-element {
-  margin-top: 32px;
+  margin-top: 32px; 
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -169,10 +193,22 @@ img {
 .title-element {
   color: var(--title-txt);
 }
-/* Photo section */
-.photo {
-  outline: 3px solid blue;
+.list-advantages{
+display: flex;
 }
+.list-advantages .item:not(:last-child){
+margin-right: 24px;}
+.list-advantages .title{
+margin-top: 0;}
+
+/* Photo section */
+.photo{
+padding-top: 0;}
+.list-photo{display: flex;}
+
+.list-photo .item:not(:last-child){
+margin-right: 24px;}
+
 .title-section {
   margin-bottom: 72px;
   font-size: 36px;
@@ -182,23 +218,38 @@ img {
   text-align: center;
   color: var(--title-txt);
 }
-/* Our team */
- 
 
-.our-team {
+/* Our team */
+
+ .our-team {
   background-color: #f4f4fd;
 }
+.list-our-team{
+display: flex;}
 .list-team-item {
+  text-align: center;
   background-color: #ffffff;
+}
+.list-our-team .item:not(:last-child){
+margin-right: 24px;}
+.img-our-team{
+  display: block;
 }
 .txt-our-team {
   font-size: 16px;
+  padding-bottom: 32px;
 }
+
 /* Footer */
 .foot {
   font-family: Raleway, sans-serif;
   background-color: #2e2f42;
 }
+.logo-foot{
+  display: block;
+  padding-top: 100px;}
+  
+
 .logo-two-foot {
   color: #f4f4fd;
 }
@@ -207,6 +258,9 @@ img {
   color: var(--pressed-state);
 }
 .foot-txt {
+  max-width: 264px;
+  margin-top: 16px;
+  padding-bottom: 100px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
@@ -215,16 +269,27 @@ img {
 .filter{
 padding-top: 96px;
 padding-bottom: 120px;}
+.img-portfolio{
+display: block;}
+
 .list-filter {
+  display: flex;
+  justify-content: center;
   margin-bottom: 72px;
-  outline: 2px solid red;
-}
+  }
+
+  .list-filter .item:not(:last-child){
+  margin-right: 24px;}
+
 .btn-filter {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border: 1px solid #E7E9FC;
+  border-radius: 4px;
+  padding: 12px 24px 12px 24px;
 }
 .btn-filter {
   color: var(--primary-brand);
@@ -241,7 +306,31 @@ padding-bottom: 120px;}
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 .txt-portfolio {
   color: var(--body-txt);
 }
+.list-portfolio{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-portfolio .item {
+  width: 360px;
+  margin-right: 24px;
+  margin-bottom: 48px;
+  border: 1px solid #E7E9FC;
+}
+
+.list-portfolio .item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.list-portfolio .item:nth-last-child(-n + 3){
+  margin-bottom: 0px;
+}
+
+.list-portfolio .title-element{
+  padding-left: 16px;}
