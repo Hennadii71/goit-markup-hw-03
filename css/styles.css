@@ -327,8 +327,7 @@ display: block;}
   width: 360px;
   margin-right: 24px;
   margin-bottom: 48px;
-  border: 1px solid #E7E9FC;
-}
+ }
 
 .list-portfolio .item:nth-child(3n) {
   margin-right: 0px;
@@ -340,4 +339,8 @@ display: block;}
 
 .list-portfolio .title-element{
   padding-left: 16px;
+}
+
+.card-content{
+  border: 1px solid #E7E9FC;
 }
