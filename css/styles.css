@@ -269,12 +269,15 @@ text-align: center;
 
 /* Footer */
 .foot {
+  padding-top: 100px;
+  padding-bottom: 100px;
   font-family: Raleway, sans-serif;
   background-color: #2e2f42;
 }
 .logo-foot{
-  display: block;
-  padding-top: 100px;}
+  display: inline-block;
+  margin-bottom: 16px;
+  }
   
 
 .logo-two-foot {
@@ -286,8 +289,6 @@ text-align: center;
 }
 .foot-txt {
   max-width: 264px;
-  margin-top: 16px;
-  padding-bottom: 100px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
